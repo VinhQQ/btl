@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "QhgyMcdE1RGphRZZc6wNMQs/RBRcpp8y8gdcAn/GItg99371gznr8XQHv7NOtfLE3fQwIxyfk7+0b3wM2pFFcw==",
+  "success": true,
+  "projectFilePath": "D:\\code\\FashionApp\\FashionApp\\FashionApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Laptop\\.nuget\\packages\\mysqlconnector\\2.2.5\\mysqlconnector.2.2.5.nupkg.sha512"
+  ],
+  "logs": []
+}
