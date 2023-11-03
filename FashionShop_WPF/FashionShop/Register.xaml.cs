@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FashionApp;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -63,7 +64,16 @@ namespace FashionShop
                 return;
             }
 
-            MessageBox.Show("Đăng ký tài khoản thành công", "Thông báo");
+            Database database = new Database();
+            database.connect();
+            bool result = database.register(username, password);
+
+            if (result)
+            {
+                inpUsername.Text = "";
+                inpPassword.Password = "";
+                inpPasswordConfirm.Password = "";
+            }
         }
 
         private void redirectToLogin(object sender, RoutedEventArgs e)

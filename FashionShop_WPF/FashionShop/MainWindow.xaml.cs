@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FashionApp;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -50,7 +51,15 @@ namespace FashionShop
                 return;
             }
 
-            MessageBox.Show("Đăng nhập thành công", "Thông báo");
+            Database database = new Database();
+            database.connect();
+            bool result = database.login(username, password);
+
+            if (result)
+            {
+                inpUsername.Text = "";
+                inpPassword.Password = "";
+            }
         }
 
         private void redirectToRegister(object sender, RoutedEventArgs e)
