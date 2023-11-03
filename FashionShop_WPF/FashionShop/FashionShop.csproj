@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="back_ground.png" />
+    <None Remove="CYXU2oR.jpg" />
+    <None Remove="desktop-wallpaper-website-background-website-login-page-background.jpg" />
+    <None Remove="fashion-designer.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="back_ground.png" />
+    <Resource Include="CYXU2oR.jpg" />
+    <Resource Include="desktop-wallpaper-website-background-website-login-page-background.jpg" />
+    <Resource Include="fashion-designer.png" />
+  </ItemGroup>
+
+</Project>
